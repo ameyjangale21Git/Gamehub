@@ -1,0 +1,48 @@
+body{
+    background-image: url(../valentines/hearts-7731411_1280.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(201, 95, 95);
+    /* font-size: 40px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#your-name{
+    font-size: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+
+}
+#crush-name{
+    font-size: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+
+}
+#container{
+    width: 400px;
+    height: 500px;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+
+}
+#calculate{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(219, 102, 122);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+#result-message{
+    font-size: 30px;
+}
+#result-percentage
+{
+    font-size: 30px;
+}

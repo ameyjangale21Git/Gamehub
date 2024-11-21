@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    gap: -100px; /* Overlap the boxes */
+    /* background-color: rgba(236, 119, 119, 0.973); */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2ccdd8, #df2828);
+    color: #333;
+}
+
+#game1, #game2, #game3 {
+    height: 350px;
+    width: 400px;
+    /* border-radius: 50px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Adds shadow */
+    overflow: hidden; /* Prevents content from overflowing */
+    position: relative; /* For z-index stacking */
+    /* background-color: white; Optional background color */
+    /* transition: transform 0.5s ease-in-out, z-index 0.3s ease-in-out; */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 50px; /* Slightly rounded corners */
+    transition: transform 0.5s ease, opacity 0.3s ease; /* Smooth hover effect */
+    z-index: 1; /* Default stacking order */
+}
+
+/* Hover effect */
+#game1:hover, #game2:hover, #game3:hover {
+    transform: scale(1.2); /* Zoom the hovered box */
+    z-index: 10; /* Bring it to the front */
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6); /* Enhanced shadow to make it pop */
+}
+
+.games a {
+    text-decoration: none;   
+}
+
+.games a img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Optional scaling effect on the image inside the box */
+#game1:hover img,
+#game2:hover img,
+#game3:hover img {
+    transform: scale(1.1); /* Slight zoom of the image */
+}
